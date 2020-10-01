@@ -14,8 +14,8 @@ display_width=800
 display_height=600
 
 black=(0,0,0)          #Tuple          
-#white=(255,255,255)    #Maximum of all colors
-white=(255,255,254)    #Maximum of all colors
+white=(255,255,255)    #Maximum of all colors
+#white=(255,255,254)    #Maximum of all colors
 
 red=(200,0,0)
 green=(0,200,0)
