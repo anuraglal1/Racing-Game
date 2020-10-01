@@ -32,7 +32,7 @@ gamedisplay=pygame.display.set_mode((display_width,display_height))
 pygame.display.set_caption('Racing Game!!!')
 clock= pygame.time.Clock()
 
-carImg=pygame.image.load('racingcar.jpg')
+carImg= pygame.image.load('racingcar.jpg')
 pygame.display.set_icon(carImg)
 
 def thing_dodged(count):    # Function to print score
