@@ -259,7 +259,7 @@ def game_loop():
         if thing_starty>display_height:   # To set position of obstacle when obstacle goes beyond screen
             thing_starty=0-thing_height
             thing_startx=random.randrange(0,display_width)
-            dodged+=1       #Incrementing Score
+            dodged+=5   #Incrementing Score
             thing_speed+=1        #Incresing Speed
            # thing_width+=(dodged *1.2)
 
