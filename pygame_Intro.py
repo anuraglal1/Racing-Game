@@ -17,6 +17,7 @@ black=(0,0,0)          #Tuple
 white=(255,255,255)    #Maximum of all colors
 #white=(255,255,254)    #Maximum of all colors
 
+# color of different parts of car.
 red=(200,0,0)
 green=(0,200,0)
 
@@ -26,7 +27,7 @@ bc=(112,0,0)
 block_color= (53,115,255)
 
 
-
+# Width of car is hard-coded to 75.
 car_width=75
 
 gamedisplay=pygame.display.set_mode((display_width,display_height))                                                                                                                        
@@ -60,11 +61,6 @@ def text_objects(text,font):
 ##    TextSurf,TextRect=text_objects(text,largetext)
 ##    TextRect.center=((display_width/2),(display_height/2))
 ##    gamedisplay.blit(TextSurf,TextRect)
-##    pygame.display.update()
-##
-##    time.sleep(2)
-##
-##    game_loop()
      
 def crash():
 
