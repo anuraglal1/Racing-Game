@@ -201,6 +201,8 @@ def game_loop():
     thing_speed=4
     thing_width=100
     thing_height=100
+#To use later
+    thing_depth=50
 
     things_count=1
 
@@ -255,8 +257,8 @@ def game_loop():
         if thing_starty>display_height:   # To set position of obstacle when obstacle goes beyond screen
             thing_starty=0-thing_height
             thing_startx=random.randrange(0,display_width)
-            dodged+=5   #Incrementing Score
-            thing_speed+=1        #Incresing Speed
+            dodged+=1   #Incrementing Score
+            thing_speed+=5        #Incresing Speed
            # thing_width+=(dodged *1.2)
 
         if y<thing_starty+thing_height:
@@ -269,7 +271,7 @@ def game_loop():
         
                     
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(30)
 
 game_intro("Racing Game!!")
 game_loop()
