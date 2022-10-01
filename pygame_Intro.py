@@ -19,14 +19,18 @@ white=(255,255,255)    #Maximum of all colors
 red=(200,0,0)
 green=(0,200,0)
 
-bright_red=(255,0,0)
+bright_red=(255,0,0).  
 bright_green=(0,255,0)
 bc=(112,0,0)
 block_color= (53,115,255)
 
+# Blue color for car's headlights.
+bright_red=(0,0,255)
 
 
 car_width=75
+# car height
+car_height=72
 
 gamedisplay=pygame.display.set_mode((display_width,display_height))                                                                                                                        
 pygame.display.set_caption('Racing Game!!!')
@@ -97,6 +101,8 @@ def button(msg,x,y,w,h,ic,ac,action='None'):
     mouse=pygame.mouse.get_pos()
     click=pygame.mouse.get_pressed()    # To Check whether left click is pressed or right
     #print(click)
+    # This will get invoked when button is unpressed
+    click=pygame.mouse.get_unpressed() 
     
     
 
